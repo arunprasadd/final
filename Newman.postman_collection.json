@@ -1,0 +1,44 @@
+{
+	"info": {
+		"name": "Newman",
+		"_postman_id": "d9eebc42-c4e4-12b3-ac41-b40054688086",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "R1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1622da69-3286-4b80-9703-f73b77493fc9",
+						"type": "text/javascript",
+						"exec": [
+							"tests[\"Status code is 200\"]= responseCode.code ===200;"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://api.publicapis.org/entries",
+					"protocol": "https",
+					"host": [
+						"api",
+						"publicapis",
+						"org"
+					],
+					"path": [
+						"entries"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
